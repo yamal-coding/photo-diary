@@ -1,0 +1,28 @@
+#photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: calc(300px * 3 + 8px * 2);
+  gap: 8px;
+}
+
+.photo-frame {
+  background: #fff;
+  padding: 10px 10px 36px 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
