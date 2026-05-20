@@ -12,6 +12,7 @@
 }
 
 .photo-thumb {
+  background: #DEDEDE;
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
