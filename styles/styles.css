@@ -19,6 +19,14 @@
   object-position: center;
 }
 
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #555;
+}
+
 body {
   background-image: url('../assets/background.png');
   background-size: cover;

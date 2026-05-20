@@ -15,7 +15,7 @@ Utils.formatMonthAndYearFromFolder = function (f) {
 
 Utils.renderFooter = function () {
   const footer = document.createElement("footer");
-  footer.style.cssText = "margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: 0.9em; color: #555;";
+  footer.className = "footer";
   footer.textContent = "Made by Yamal with love 📸 All the photos taken are mine";
   document.body.appendChild(footer);
 };
