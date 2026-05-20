@@ -82,3 +82,19 @@ a {
 a:hover {
   color: #4f260e;
 }
+
+.photo-thumb-link {
+  display: block;
+  text-decoration: none;
+}
+
+.photo-full {
+  background: #DEDEDE;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#photo-container {
+  max-width: 500px;
+}

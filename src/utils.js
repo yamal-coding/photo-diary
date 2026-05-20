@@ -13,6 +13,11 @@ Utils.formatMonthAndYearFromFolder = function (f) {
   return Utils.MONTH_NAMES[monthIndex] + " " + year;
 };
 
+Utils.applyRandomTilt = function (element) {
+  const tilt = (Math.random() * 6 - 3).toFixed(2);
+  element.style.transform = "rotate(" + tilt + "deg)";
+};
+
 Utils.renderFooter = function () {
   const footer = document.createElement("footer");
   footer.className = "footer";

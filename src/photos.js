@@ -29,10 +29,13 @@
       }
 
       data.photos.forEach(function (filename) {
+        const link = document.createElement("a");
+        link.href = "pages/photo.html?src=" + encodeURIComponent(folder + "/" + filename) + "&month=" + encodeURIComponent(folder);
+        link.className = "photo-thumb-link";
+
         const photoFrame = document.createElement("div");
         photoFrame.className = "photo-frame";
-        const tilt = (Math.random() * 6 - 3).toFixed(2);
-        photoFrame.style.transform = "rotate(" + tilt + "deg)";
+        Utils.applyRandomTilt(photoFrame);
 
         const img = document.createElement("img");
         img.src = folder + "/" + filename;
@@ -40,7 +43,8 @@
         img.className = "photo-thumb";
 
         photoFrame.appendChild(img);
-        container.appendChild(photoFrame);
+        link.appendChild(photoFrame);
+        container.appendChild(link);
       });
     })
     .catch(function () {
