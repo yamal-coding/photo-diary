@@ -22,16 +22,53 @@
 .footer {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(39, 35, 31, 0.24);
   font-size: 0.9em;
-  color: #555;
+  color: #5f574f;
 }
 
 body {
-  background-image: url('../assets/background.png');
+  margin: 0;
+  min-height: 100vh;
+  padding: clamp(24px, 5vw, 56px);
+  background-image:
+    linear-gradient(rgba(255, 255, 250, 0.72), rgba(255, 255, 250, 0.72)),
+    url('../assets/background.png');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: "Courier New", monospace;
-  font-size: 17px;
+  color: #27231f;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(17px, 1vw + 14px, 20px);
+  line-height: 1.65;
+}
+
+h1 {
+  margin: 0 0 0.4em;
+  color: #1f1a16;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 1.8em;
+  color: #2f2924;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.1;
+}
+
+p {
+  max-width: 68ch;
+}
+
+a {
+  color: #7a3f18;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #4f260e;
 }
