@@ -34,7 +34,7 @@ body {
   padding: clamp(24px, 5vw, 56px);
   background-image:
     linear-gradient(rgba(255, 255, 250, 0.72), rgba(255, 255, 250, 0.72)),
-    url('../assets/background.png');
+    url('../assets/background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
